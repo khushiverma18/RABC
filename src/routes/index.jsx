@@ -90,15 +90,7 @@ function Index() {
             </p>
 
             <div className="mt-10 flex flex-wrap justify-center gap-4">
-              {user ? (
-                <Link
-                  to="/dashboard"
-                  className="group flex items-center gap-2 rounded-xl bg-white px-8 py-4 font-bold text-slate-950 transition-all hover:bg-indigo-50 hover:scale-105 active:scale-95"
-                >
-                  Enter Dashboard
-                  <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-                </Link>
-              ) : (
+            
                 <Link
                   to="/login"
                   search={{ redirect: "/dashboard" }}
@@ -107,7 +99,7 @@ function Index() {
                   Get Started
                   <ChevronRight size={18} />
                 </Link>
-              )}
+            
               <a
                 href="#roles"
                 className="rounded-xl border border-white/10 bg-white/5 px-8 py-4 font-bold text-white backdrop-blur-md transition-all hover:bg-white/10"
